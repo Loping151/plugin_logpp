@@ -13,7 +13,7 @@ from datetime import datetime
 def create_csv_file(file_name):
     with open(file_name, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(["时间", "用户名", "群聊", "输入token数", "输出token数", "实际请求内容", "装饰后输出内容"])
+        writer.writerow(["时间", "用户名", "群聊", "输入token数", "输出token数", "实际请求内容", "输出内容"])
 
 def add_row_to_csv(file_name, current_time, user, group, in_token, out_token, input_text, reply):
     with open(file_name, mode='a', newline='', encoding='utf-8') as file:
